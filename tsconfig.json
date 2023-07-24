@@ -7,6 +7,12 @@
         "outDir": "dist",
         "esModuleInterop": true,
         "strict": true,
+        "baseUrl": "./src",
+        "paths": {
+            "@attack/*": ["./attack/*"],
+            "@dice/*": ["./dice/*"],
+            "@player/*": ["./player/*"]
+        }
     },
     "exclude": [
         "node_modules",
