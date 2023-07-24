@@ -1,5 +1,5 @@
-import {AttackType, getAttack} from "../attack/AttackType";
-import AttackSummary from "../attack/AttackSummary";
+import {AttackType, getAttack} from "@attack/AttackType";
+import AttackSummary from "@attack/AttackSummary";
 
 class Player {
     constructor(

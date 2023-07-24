@@ -1,4 +1,4 @@
-import throwDice from "../dice/Dice";
+import throwDice from "@dice/Dice";
 
 class Attack {
     constructor(

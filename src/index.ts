@@ -1,5 +1,5 @@
-import {AttackType, getAttack} from "./attack/AttackType";
-import Player from "./player/Player";
+import Player from "@player/Player";
+import {AttackType} from "@attack/AttackType";
 
 const at = AttackType.Axe
 const p = new Player(25, 16)
