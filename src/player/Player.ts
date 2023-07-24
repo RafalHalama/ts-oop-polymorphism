@@ -11,7 +11,7 @@ class Player {
         return this._health
     }
 
-    takeHit = (attackType: AttackType): AttackSummary => {
+    public takeHit (attackType: AttackType): AttackSummary {
         const attack = getAttack[attackType]
         const accuracyRoll = attack.rollForAccuracy()
         if (accuracyRoll >= this._armour) {

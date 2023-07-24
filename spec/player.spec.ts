@@ -1,5 +1,5 @@
-import Player from "../src/player/Player";
-import { AttackType, getAttack } from "../src/attack/AttackType";
+import Player from "@player/Player";
+import { AttackType, getAttack } from "@attack/AttackType";
 
 describe("Player tests", () => {
   let player: Player;

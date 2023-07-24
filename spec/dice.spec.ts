@@ -1,4 +1,4 @@
-import throwDice from "../src/dice/Dice";
+import throwDice from "@dice/Dice";
 
 describe("dice tests", () => {
   it("should return number between 1 and 4", () => {
