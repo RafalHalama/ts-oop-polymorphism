@@ -4,11 +4,13 @@ class Level {
   get level(): number {
     return this._level;
   }
+
   get experience(): number {
     return this._experience;
   }
+
   addExperience(experience: number) {
-    const remainingExp = this.getExperienceForNextLevel();
+    const remainingExp = this.remainingExp();
 
     if (experience >= remainingExp) {
       this._level++;
@@ -17,15 +19,16 @@ class Level {
       this._experience += experience;
     }
 
-    if (this._experience >= this.getCurrentExperienceThreshold()) {
+    if (this._experience >= this.currentExpThreshold()) {
       this.addExperience(0);
     }
   }
 
-  private getExperienceForNextLevel() {
-    return this._level * 10 - this._experience;
+  remainingExp() {
+    return this.currentExpThreshold() - this._experience;
   }
-  private getCurrentExperienceThreshold() {
+
+  currentExpThreshold() {
     return this.level * 10;
   }
 }
